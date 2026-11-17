@@ -66,6 +66,11 @@ input  :  1706136   packed :  1355776 (79%)
 - **GCC** (MinGW-w64) — to compile `packer.c`.
 
 
+## Latest virus scans 17.11.2026
+
+Runtime: https://www.kleenscan.biz/runtime/scan_result/e385e6bf2299bb078b79cb0b829e9bdb3e212d3b2049783d300d3e439ff880a8
+Scantime: https://www.kleenscan.biz/scan_result/1e0c7b14fe1daf6973566ccb06323b92ba15b335bbbb422b25ed5ec5a81db5fc
+
 ## Disclaimer
 
 Chameleos is a legitimate executable-protection tool. It compresses, encrypts, and restructures standard Windows PE executables to make them smaller and structurally distinct. It contains **no malicious payload**, **no anti-debug tricks**, **no persistence mechanism**, and **no side effects** on the host system beyond the output EXE you ask it to produce.
