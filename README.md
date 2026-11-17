@@ -73,7 +73,7 @@ input  :  1706136   packed :  1355776 (79%)
 
 Every transaction is valued, whatever the size. There is no minimum.
 Chameleos is developed in my spare time. If you find it useful and want to say thanks, Bitcoin is welcome — every satoshi is appreciated.
-BTC: bc1qve3g7ts96767xwe8kvna7mjk7d5rvpvle7q5vc
+BTC: **bc1qve3g7ts96767xwe8kvna7mjk7d5rvpvle7q5vc**
 
 ---
 
