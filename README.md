@@ -90,7 +90,7 @@ Anyone who sends **500 € or more** worth of BTC (at the exchange rate on the d
 | **Sled shape** | Fixed length range and filler bytes | Different length range and different filler bytes |
 | **Section name pool** | Fixed list of plausible linker names | Different list of plausible linker names |
 
-Custom stubs remain fully compatible with `packer.exe` — they satisfy every requirement in [`INVARIANTS.md`](INVARIANTS.md), so the packer will use them without any code change. They are provided under the same MIT terms as the public ones, with the additional property that **you will be the only outside recipient** of that particular variant.
+Custom stubs remain fully compatible with `chameleos.exe` — they satisfy every requirement so the packer will use them without any code change. They are provided under the same MIT terms as the public ones, with the additional property that **you will be the only outside recipient** of that particular variant.
 
 ---
 
@@ -102,8 +102,8 @@ Custom stubs remain fully compatible with `packer.exe` — they satisfy every re
 
 ### Contact
 
-- **GitHub Discussions** — open a thread in [`Discussions`](https://github.com/YOUR_USERNAME/Chameleos/discussions)
-- **GitHub profile** — message me through my profile page ([@YOUR_USERNAME](https://github.com/YOUR_USERNAME))
+- **GitHub Discussions** — open a thread in [`Discussions`](https://github.com/W33v3ly/Chameleos/discussions)
+- **GitHub profile** — message me through my profile page ([@YOUR_USERNAME](https://github.com/W33v3ly))
 
 If you'd rather have a private channel, include that preference in your message and I'll reply with a direct one.
 
