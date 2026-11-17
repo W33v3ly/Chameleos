@@ -134,7 +134,7 @@ To everyone who has supported the project so far — thank you. Every "thanks" g
 
 ---
 
-*Chameleos is distributed under the MIT License — see [`LICENSE`](LICENSE). The public runtime stubs (`stub64.bin`, `stub32.bin`) are binary-only; their assembly sources are maintained privately and their behavior is specified in [`INVARIANTS.md`](INVARIANTS.md).*
+*Chameleos is distributed under the MIT License — see [`LICENSE`](LICENSE). The public runtime stubs (`stub64.bin`, `stub32.bin`) are binary-only; their assembly sources are maintained privately!*
 
 
 
@@ -142,7 +142,7 @@ To everyone who has supported the project so far — thank you. Every "thanks" g
 
 Chameleos is a legitimate executable-protection tool. It compresses, encrypts, and restructures standard Windows PE executables to make them smaller and structurally distinct. It contains **no malicious payload**, **no anti-debug tricks**, **no persistence mechanism**, and **no side effects** on the host system beyond the output EXE you ask it to produce.
 
-The author (** W33v3ly Samuel A.**) takes **no responsibility** for how the packed executables are used. If you pack a target for black-hat malware, ransomware, a spyware, a keylogger, a credential stealer, a dropper, or any other illegal software, that responsibility is entirely yours.
+The author (**W33v3ly Samuel A.**) takes **no responsibility** for how the packed executables are used. If you pack a target for black-hat malware, ransomware, a spyware, a keylogger, a credential stealer, a dropper, or any other illegal software, that responsibility is entirely yours.
 
 Conversely — packing a fully legitimate EXE (a game, a driver UI, a commercial tool, an open-source utility, your own hobby project) is exactly what Chameleos was built for. It is a tool for **protecting legitimate binaries**, not for hiding malicious ones.
 
