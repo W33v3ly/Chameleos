@@ -1,5 +1,8 @@
 # Chameleos
 
+<img width="1024" height="572" alt="banner" src="https://github.com/user-attachments/assets/fa72df3d-0a8f-4c35-b568-834f234b79b8" />
+
+
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 ![Arch](https://img.shields.io/badge/arch-x86%20%7C%20x64-green)
 ![Compression](https://img.shields.io/badge/compression-LZ4-orange)
