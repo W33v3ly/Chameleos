@@ -70,3 +70,13 @@ input  :  1706136   packed :  1355776 (79%)
 ```bat
 build.bat
 
+## Disclaimer
+
+Chameleos is a legitimate executable-protection tool. It compresses, encrypts, and restructures standard Windows PE executables to make them smaller and structurally distinct. It contains **no malicious payload**, **no anti-debug tricks**, **no persistence mechanism**, and **no side effects** on the host system beyond the output EXE you ask it to produce.
+
+The author (**Samuel A.**) takes **no responsibility** for how the packed executables are used. If you pack a target for black-hat malware, ransomware, a spyware, a keylogger, a credential stealer, a dropper, or any other illegal software, that responsibility is entirely yours.
+
+Conversely — packing a fully legitimate EXE (a game, a driver UI, a commercial tool, an open-source utility, your own hobby project) is exactly what Chameleos was built for. It is a tool for **protecting legitimate binaries**, not for hiding malicious ones.
+
+Use it in good faith. If a packer removes bytes, restructures sections, or randomises a stub, that is engineering — what you do with the packed file after is the moral question, and the author is not part of it.
+
