@@ -75,7 +75,7 @@ Scantime: https://www.kleenscan.biz/scan_result/1e0c7b14fe1daf6973566ccb06323b92
 
 Chameleos is a legitimate executable-protection tool. It compresses, encrypts, and restructures standard Windows PE executables to make them smaller and structurally distinct. It contains **no malicious payload**, **no anti-debug tricks**, **no persistence mechanism**, and **no side effects** on the host system beyond the output EXE you ask it to produce.
 
-The author (**Samuel A.**) takes **no responsibility** for how the packed executables are used. If you pack a target for black-hat malware, ransomware, a spyware, a keylogger, a credential stealer, a dropper, or any other illegal software, that responsibility is entirely yours.
+The author (** W33v3ly Samuel A.**) takes **no responsibility** for how the packed executables are used. If you pack a target for black-hat malware, ransomware, a spyware, a keylogger, a credential stealer, a dropper, or any other illegal software, that responsibility is entirely yours.
 
 Conversely — packing a fully legitimate EXE (a game, a driver UI, a commercial tool, an open-source utility, your own hobby project) is exactly what Chameleos was built for. It is a tool for **protecting legitimate binaries**, not for hiding malicious ones.
 
