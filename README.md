@@ -65,10 +65,6 @@ input  :  1706136   packed :  1355776 (79%)
 - **NASM** — only if you want to reassemble the stubs. Pre-built `stub64.bin` / `stub32.bin` are shipped in this repository, so this is optional for the packer itself.
 - **GCC** (MinGW-w64) — to compile `packer.c`.
 
-### From source (uses pre-built stubs)
-
-```bat
-build.bat
 
 ## Disclaimer
 
