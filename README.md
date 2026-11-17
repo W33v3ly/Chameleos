@@ -103,7 +103,7 @@ Custom stubs remain fully compatible with `chameleos.exe` — they satisfy every
 ### Contact
 
 - **GitHub Discussions** — open a thread in [`Discussions`](https://github.com/W33v3ly/Chameleos/discussions)
-- **GitHub profile** — message me through my profile page ([@YOUR_USERNAME](https://github.com/W33v3ly))
+- **GitHub profile** — message me through my profile page ([@W33v3ly](https://github.com/W33v3ly))
 
 If you'd rather have a private channel, include that preference in your message and I'll reply with a direct one.
 
