@@ -68,8 +68,8 @@ input  :  1706136   packed :  1355776 (79%)
 
 ## Latest virus scans 17.11.2026
 
-Runtime: https://www.kleenscan.biz/runtime/scan_result/e385e6bf2299bb078b79cb0b829e9bdb3e212d3b2049783d300d3e439ff880a8
-Scantime: https://www.kleenscan.biz/scan_result/1e0c7b14fe1daf6973566ccb06323b92ba15b335bbbb422b25ed5ec5a81db5fc
+Runtime: `https://www.kleenscan.biz/runtime/scan_result/e385e6bf2299bb078b79cb0b829e9bdb3e212d3b2049783d300d3e439ff880a8`
+Scantime: `https://www.kleenscan.biz/scan_result/1e0c7b14fe1daf6973566ccb06323b92ba15b335bbbb422b25ed5ec5a81db5fc`
 
 ## Disclaimer
 
