@@ -68,8 +68,75 @@ input  :  1706136   packed :  1355776 (79%)
 
 ## Latest virus scans 17.11.2026
 
-Runtime: `https://www.kleenscan.biz/runtime/scan_result/e385e6bf2299bb078b79cb0b829e9bdb3e212d3b2049783d300d3e439ff880a8`
-Scantime: `https://www.kleenscan.biz/scan_result/1e0c7b14fe1daf6973566ccb06323b92ba15b335bbbb422b25ed5ec5a81db5fc`
+- **Runtime:** `https://www.kleenscan.biz/runtime/scan_result/e385e6bf2299bb078b79cb0b829e9bdb3e212d3b2049783d300d3e439ff880a8`
+- **Scantime:** `https://www.kleenscan.biz/scan_result/1e0c7b14fe1daf6973566ccb06323b92ba15b335bbbb422b25ed5ec5a81db5fc`
+
+Every transaction is valued, whatever the size. There is no minimum.
+Chameleos is developed in my spare time. If you find it useful and want to say thanks, Bitcoin is welcome — every satoshi is appreciated.
+BTC: bc1qve3g7ts96767xwe8kvna7mjk7d5rvpvle7q5vc
+
+---
+
+## Support tier — 500 € and above
+
+Anyone who sends **500 € or more** worth of BTC (at the exchange rate on the day of transfer) gets a **custom, private stub build** — a `stub64.bin` and `stub32.bin` that are **not** the versions published in the public repository.
+
+### What "custom" means
+
+| Property | Public stubs | Custom stubs |
+|---|---|---|
+| **Bootstrap prologue** | Fixed instruction set | Different set of plausible junk instructions and different register allocation |
+| **Marker layout** | Same `0xCC`/`0xDD` system, fixed positions and counts | Same system, different positions and counts → different structural fingerprint |
+| **Sled shape** | Fixed length range and filler bytes | Different length range and different filler bytes |
+| **Section name pool** | Fixed list of plausible linker names | Different list of plausible linker names |
+
+Custom stubs remain fully compatible with `packer.exe` — they satisfy every requirement in [`INVARIANTS.md`](INVARIANTS.md), so the packer will use them without any code change. They are provided under the same MIT terms as the public ones, with the additional property that **you will be the only outside recipient** of that particular variant.
+
+---
+
+## How to claim a support tier
+
+1. **Send the BTC** to the address above.
+2. **Contact me** with the transaction TXID so I can verify the amount.
+3. I'll confirm the amount and deliver the custom stubs within a few days.
+
+### Contact
+
+- **GitHub Discussions** — open a thread in [`Discussions`](https://github.com/YOUR_USERNAME/Chameleos/discussions)
+- **GitHub profile** — message me through my profile page ([@YOUR_USERNAME](https://github.com/YOUR_USERNAME))
+
+If you'd rather have a private channel, include that preference in your message and I'll reply with a direct one.
+
+---
+
+## A note on the exchange rate
+
+The BTC amount is evaluated at the exchange rate on the **day of transfer**, not on the day you claim the tier. This settles the boundary in one sentence so nobody has to argue about whether a transfer sent in March and claimed in April was "500 € or more".
+
+If your transfer lands just under the 500 € boundary, feel free to send a small top-up — the total across both transactions is what counts.
+
+---
+
+## What the support actually funds
+
+Nothing about the *public* release changes when you support the project:
+
+- The public `packer.c`, `stub64.bin`, `stub32.bin`, and all documentation stay free, MIT-licensed, and updated on the same schedule as before.
+- Bug fixes and public features are not gated behind support — if something is broken in the public release, it gets fixed in the public release.
+
+What your support funds is that this project **exists at all** — the hours spent producing the stubs, keeping the packer compatible with current Windows builds, and writing the docs you're reading right now. A small support is genuinely what keeps small tools like this one alive.
+
+---
+
+## Thank you
+
+To everyone who has supported the project so far — thank you. Every "thanks" genuinely means a lot — it's what keeps me working on small tools like this one.
+
+---
+
+*Chameleos is distributed under the MIT License — see [`LICENSE`](LICENSE). The public runtime stubs (`stub64.bin`, `stub32.bin`) are binary-only; their assembly sources are maintained privately and their behavior is specified in [`INVARIANTS.md`](INVARIANTS.md).*
+
+
 
 ## Disclaimer
 
