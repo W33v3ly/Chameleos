@@ -1,2 +1,49 @@
 # Chameleos
-Native x86/x64 PE packer. LZ4 compression, rolling SUB+ROL3 cipher, metamorphic runtime stub. Every build produces a structurally distinct, runs-identically binary. Zero dependencies. GUI + console EXEs.
+
+![Platform](https://img.shields.io/badge/platform-Windows-blue)
+![Arch](https://img.shields.io/badge/arch-x86%20%7C%20x64-green)
+![Compression](https://img.shields.io/badge/compression-LZ4-orange)
+![Cipher](https://img.shields.io/badge/cipher-SUB%2BROL3-blueviolet)
+![License](https://img.shields.io/badge/license-MIT-yellow)
+
+> A native PE packer for x86 and x64 Windows executables — LZ4 compression, rolling SUB cipher, and a metamorphic runtime stub that reshapes on every build.
+
+Chameleos takes a standard 32- or 64-bit PE file, compresses its code and data, encrypts the payload, mutates a small runtime stub into a randomly named section, and rewrites the entry point so the stub executes first. Every run produces a structurally distinct binary that behaves identically to the original.
+
+---
+
+## Features
+
+- **x64 + x86** — AMD64 and i386 executables, GUI and console subsystems.
+- **LZ4 compression** — pure C implementation, no external libraries.
+- **Rolling SUB + ROL3 cipher** — per-build 32-byte key, applied in-place over the compressed stream.
+- **Metamorphic stub** — the runtime stub's prologue is randomised per build; a fixed-size junk system preserves every jump target.
+- **Per-build randomness** — random section name (from a linker-plausible list), random OEP sled length (16–496 bytes), fresh 32-byte key, fresh junk marker layout.
+- **Loader-friendly PE shape** — non-zero `SizeOfRawData` on every section, recomputed `CheckSum`, normalised `DllCharacteristics` (NX_COMPAT retained, `DYNAMIC_BASE`/CFG/CET cleared).
+- **Zero runtime dependencies** — the stub is self-contained assembly.
+- **~66% of original size** on typical `putty.exe` / `notepad.exe`.
+
+---
+
+## Supported targets
+
+| Architecture | `FileHeader.Machine` | PE OptionalHeader | Subsystem |
+|---|---|---|---|
+| **x64** | `0x8664` | `IMAGE_NT_OPTIONAL_HDR64_MAGIC` | GUI / CUI |
+| **x86** | `0x014c` | `IMAGE_NT_OPTIONAL_HDR32_MAGIC` | GUI / CUI |
+
+DLLs are rejected (`IMAGE_FILE_DLL` bit must be clear). Already-packed binaries (UPX, Themida, VMProtect, Enigma) are not supported — their section layout violates the assumptions Chameleos makes.
+
+---
+
+## Build
+
+### Requirements
+
+- **NASM** — only if you want to reassemble the stubs. Pre-built `stub64.bin` / `stub32.bin` are shipped in this repository, so this is optional for the packer itself.
+- **GCC** (MinGW-w64) — to compile `packer.c`.
+
+### From source (uses pre-built stubs)
+
+```bat
+build.bat
