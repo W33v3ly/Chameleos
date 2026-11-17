@@ -37,6 +37,7 @@ DLLs are rejected (`IMAGE_FILE_DLL` bit must be clear). Already-packed binaries 
 ---
 ## Usage 
 
+`
 chameleos.exe in.exe out64.exe
   .text    rva=00001000 raw=  971776 ->   653078 (67%)
   .data    rva=00132000 raw=    4096 ->      995 (24%)
@@ -46,7 +47,7 @@ chameleos.exe in.exe out64.exe
 mutated: 4 var + 12 fix, stub 435 -> 430 bytes
 section: .rdata2  sled=106  oep=001A506A
 input  :  1706136   packed :  1355776 (79%)
-
+`
 
 ## Build
 
