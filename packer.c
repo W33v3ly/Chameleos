@@ -74,7 +74,7 @@ static int lz4_compress(const unsigned char *src, int n, unsigned char *dst) {
     return dp;
 }
 
-/* ================= Junk table (portable x86+x64) ================= */
+/* ================= Junk table (portable x86+x64) ================ */
 typedef struct { unsigned char bytes[8]; int len; } JunkInsn;
 static const JunkInsn junk_table[] = {
     {{0x90}, 1}, {{0x66,0x90}, 2}, {{0x0F,0x1F,0x00}, 3},
